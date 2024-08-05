@@ -2,6 +2,7 @@
 #define TERRAIN_H
 
 #include <math.h>
+#include <stdbool.h>
 #include "structures.h"
 
 // A terrain stores the heights of all the points in the grid, along with their normal
@@ -10,6 +11,9 @@ typedef struct {
     int xSize, zSize, height;
     GLfloat** heights; // 2D Array of GLfloat
     Vector3** normals; // 2D Array of Vector3
+
+    bool spinning;
+    bool morphing;
 } Terrain;
 // For the normals array above, normals[0] refers to the triangle between
 // heights[0][0], heights[1][0], and heights[0][1]. normals[1] then refers

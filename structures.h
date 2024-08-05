@@ -13,6 +13,9 @@ typedef struct {
     GLfloat x, y, z;
 } Vector3;
 
+// A colour takes an x and y and z, and returns the colour.
+typedef Vector3 (*colourFunction) (GLfloat, GLfloat, GLfloat);
+
 // Holds information about a 2D point.
 typedef struct {
     GLfloat x, y;

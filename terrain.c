@@ -19,6 +19,9 @@ Terrain* createTerrain(int xSize, int zSize, int height) {
     terrain->zSize = zSize;
     terrain->height = height;
 
+    terrain->spinning = false;
+    terrain->morphing = false;
+
     //Allocates memory for normals
     terrain->normals = malloc(sizeof(Vector3*) * xSize);
     assert(terrain->normals != NULL);

@@ -109,5 +109,5 @@ After building the program, you can run it using the following command:
 #### Optional Command-Line arguments
 - **`-m=[Height mode]`**: Specifies the mode of terrain height generation. Available Modes: 0-4
 - **`-c=[Colour mode]`**: Specifies the colour mode of the terrain. Available Modes: 0-3
-- **`-s=[Size]`**: Specifies the size of the terrain.  Example: `-c=volcanic`
+- **`-s=[Size]`**: Specifies the size of the terrain.  Example: **`-s=500`**
 
